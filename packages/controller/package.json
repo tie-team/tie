@@ -35,7 +35,7 @@
     "@tiejs/exception": "^1.5.0",
     "@tiejs/logger": "^1.5.0",
     "body-parser": "^1.19.0",
-    "class-transformer": "^0.2.3",
+    "class-transformer": "^0.3.1",
     "class-validator": "^0.12.2",
     "cookie": "^0.4.1",
     "globby": "^11.0.0",

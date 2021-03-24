@@ -1,14 +1,14 @@
 {
   "name": "@tiejs/example",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "scripts": {
     "dev": "tie dev",
     "build": "tie build",
     "test": "tie test"
   },
   "dependencies": {
-    "@tiejs/core": "^1.7.0",
-    "@tiejs/typeorm": "^1.7.0",
+    "@tiejs/core": "^1.8.0",
+    "@tiejs/typeorm": "^1.8.0",
     "tie-cli": "^1.1.0"
   }
 }

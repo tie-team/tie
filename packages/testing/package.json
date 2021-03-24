@@ -1,6 +1,6 @@
 {
   "name": "@tiejs/testing",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "description": "Test toolkit for TieJS",
   "main": "dist/index.js",
   "scripts": {
@@ -21,6 +21,6 @@
     "typescript": "^4.1.3"
   },
   "dependencies": {
-    "@tiejs/common": "^1.7.0"
+    "@tiejs/common": "^1.8.0"
   }
 }

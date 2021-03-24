@@ -19,7 +19,7 @@
     "lodash.get": "^4.4.2",
     "reflect-metadata": "^0.1.13",
     "tslib": "^2.0.3",
-    "typedi": "^0.10.0"
+    "typedi": "^0.8.0"
   },
   "devDependencies": {
     "@types/glob": "^7.1.3",

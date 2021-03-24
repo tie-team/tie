@@ -19,7 +19,7 @@
     "@tiejs/logger": "^1.8.0",
     "mysql": "^2.18.1",
     "typeorm": "^0.2.31",
-    "typeorm-typedi-extensions": "^0.4.1"
+    "typeorm-typedi-extensions": "^0.2.3"
   },
   "devDependencies": {
     "tsnl": "1.4.0",

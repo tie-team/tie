@@ -81,9 +81,11 @@ export class SchedulePlugin implements IPlugin {
     const scheduleConfig: ScheduleConfig = app.config.schedule || {}
     let { schedules = [], enable } = scheduleConfig
 
-    if (!Reflect.has(scheduleConfig, 'enable')) enable = true // 默认 enable 为 true
-
-    if (!enable) return // enable = false 时，不执行定时任务
+    if (!Reflect.has(scheduleConfig, 'enable')) {
+      // 默认 enable 为 true
+      // 这是全局的 enable 配置
+      enable = true
+    }
 
     for (const ScheduleClass of schedules) {
       let instance = Container.get<any>(ScheduleClass)
@@ -92,7 +94,31 @@ export class SchedulePlugin implements IPlugin {
       for (const methodName of methodNames) {
         const fn = instance[methodName]
         const value = methodStore.get(fn)
-        this[value.taskType](instance, value)
+        const { cronOptions = {}, timerOptions = {} } = value
+
+        // 如果方法内有 enable， 则用防范内的 enable 配置，它优先级最高，不管是 true or false
+
+        if (value.taskType === 'cron') {
+          if (Reflect.has(cronOptions, 'enable')) {
+            if (cronOptions.enable) {
+              this[value.taskType](instance, value)
+            }
+          } else {
+            if (enable) {
+              this[value.taskType](instance, value)
+            }
+          }
+        } else {
+          if (Reflect.has(timerOptions, 'enable')) {
+            if (timerOptions.enable) {
+              this[value.taskType](instance, value)
+            }
+          } else {
+            if (enable) {
+              this[value.taskType](instance, value)
+            }
+          }
+        }
       }
     }
   }

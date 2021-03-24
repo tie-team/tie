@@ -36,6 +36,11 @@ export interface CronOptions {
    * NODE_ENV
    */
   env?: string
+
+  /**
+   * 是否开启，也就是开启的条件
+   */
+  enable?: boolean | (() => boolean)
 }
 
 export interface MethodStoreValue {
@@ -69,4 +74,9 @@ export interface TimerOptions {
    * NODE_ENV
    */
   env?: string
+
+  /**
+   * 是否开启，也就是开启的条件
+   */
+  enable?: boolean | (() => boolean)
 }

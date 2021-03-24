@@ -1,7 +1,7 @@
 import { Application, Container } from '@tiejs/common'
 
 export function InjectEmitter() {
-  return (object: Object, propertyName: string, index?: number) => {
+  return (object: any, propertyName: string, index?: number) => {
     Container.registerHandler({
       object,
       propertyName,

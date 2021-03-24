@@ -97,7 +97,7 @@ function getVaue(ctx: Context, next: NextFunction, paramType: string, paramName:
     [paramTypes.Body]: () => (paramName ? ctx.request.body[paramName] : ctx.request.body),
     [paramTypes.Params]: () => (paramName ? ctx.params[paramName] : ctx.params),
     [paramTypes.Cookie]: () => {
-      const cookies = parse(ctx.headers.cookie) || {}
+      const cookies = parse(ctx.headers.cookie || '') || {}
       return paramName ? cookies[paramName] : cookies
     },
     [paramTypes.Method]: () => ctx.method,

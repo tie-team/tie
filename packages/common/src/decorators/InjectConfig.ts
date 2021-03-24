@@ -3,7 +3,7 @@ import get from 'lodash.get'
 import { Application } from '../interfaces/Application'
 
 export function InjectConfig(key?: string) {
-  return function(object: Object, propertyName: string, index?: number) {
+  return function(object: any, propertyName: string, index?: number) {
     Container.registerHandler({
       object,
       propertyName,

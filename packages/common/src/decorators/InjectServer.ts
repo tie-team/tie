@@ -2,7 +2,7 @@ import { Container } from 'typedi'
 import { Application } from '../interfaces/Application'
 
 export function InjectServer() {
-  return function(object: Object, propertyName: string, index?: number) {
+  return function(object: any, propertyName: string, index?: number) {
     Container.registerHandler({
       object,
       propertyName,

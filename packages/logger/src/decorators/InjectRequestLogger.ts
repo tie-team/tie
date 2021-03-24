@@ -5,7 +5,7 @@ import { join } from 'path'
 const file = 'request.log'
 
 export function InjectRequestLogger(type = '') {
-  return function(object: Object, propertyName: string, index?: number) {
+  return function(object: any, propertyName: string, index?: number) {
     Container.registerHandler({
       object,
       propertyName,

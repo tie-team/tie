@@ -3,7 +3,7 @@ import { Logger } from '@tsed/logger'
 import { join } from 'path'
 
 export function InjectLogger(type = '') {
-  return function(object: Object, propertyName: string, index?: number) {
+  return function(object: any, propertyName: string, index?: number) {
     Container.registerHandler({
       object,
       propertyName,

@@ -1,6 +1,6 @@
 {
   "name": "@tiejs/exception",
-  "version": "1.9.0",
+  "version": "1.10.0",
   "description": "Exception for TieJS",
   "main": "dist/index.js",
   "scripts": {

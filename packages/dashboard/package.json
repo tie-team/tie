@@ -1,6 +1,6 @@
 {
   "name": "@tiejs/dashboard",
-  "version": "1.9.0",
+  "version": "1.10.0",
   "description": "Tie dashboard",
   "main": "dist/index.js",
   "scripts": {
@@ -28,9 +28,9 @@
     "type-graphql": "^1.1.1"
   },
   "dependencies": {
-    "@tiejs/common": "^1.9.0",
-    "@tiejs/controller": "^1.9.0",
-    "@tiejs/graphql": "^1.9.0",
+    "@tiejs/common": "^1.10.0",
+    "@tiejs/controller": "^1.10.0",
+    "@tiejs/graphql": "^1.10.0",
     "cors": "^2.8.5",
     "express": "^4.17.1"
   }

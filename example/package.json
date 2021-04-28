@@ -1,6 +1,7 @@
 {
   "name": "@tiejs/example",
   "version": "1.9.0",
+  "private": true,
   "scripts": {
     "dev": "tie dev",
     "build": "tie build",

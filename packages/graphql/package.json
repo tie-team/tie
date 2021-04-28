@@ -8,7 +8,7 @@
     "build": "tsnl build",
     "test": "tsnl test",
     "lint": "tsnl lint",
-    "lint:fix": "tsnt lint --fix"
+    "lint:fix": "tsnl lint --fix"
   },
   "files": [
     "dist"

@@ -10,7 +10,7 @@
     "test:watch": "tsnl test --watch",
     "test:cov": "tsnl test --coverage",
     "lint": "tsnl lint",
-    "lint:fix": "tsnt lint --fix"
+    "lint:fix": "tsnl lint --fix"
   },
   "files": [
     "dist",

@@ -2,7 +2,7 @@ import { GraphQLScalarType } from 'graphql'
 import { PubSubEngine, PubSubOptions } from 'graphql-subscriptions'
 
 // type Directive = () => Promise<any> | any
-interface ScalarsMapItem {
+export interface ScalarsMapItem {
   type: any
   scalar: GraphQLScalarType
 }

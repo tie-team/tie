@@ -1,6 +1,6 @@
 {
   "name": "@tiejs/example",
-  "version": "1.11.0",
+  "version": "1.12.0",
   "private": true,
   "scripts": {
     "dev": "tie dev",
@@ -8,8 +8,8 @@
     "test": "tie test"
   },
   "dependencies": {
-    "@tiejs/core": "^1.11.0",
-    "@tiejs/typeorm": "^1.11.0",
+    "@tiejs/core": "^1.12.0",
+    "@tiejs/typeorm": "^1.12.0",
     "tie-cli": "^1.1.0"
   }
 }

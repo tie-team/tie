@@ -1,6 +1,6 @@
 {
   "name": "@tiejs/common",
-  "version": "1.11.0",
+  "version": "1.12.0",
   "description": "TieJS common module",
   "main": "dist/index.js",
   "scripts": {
@@ -14,10 +14,10 @@
     "dist"
   ],
   "dependencies": {
+    "globby": "^11.0.3",
     "koa": "^2.13.1",
     "lodash.get": "^4.4.2",
     "reflect-metadata": "^0.1.13",
-    "globby": "^11.0.3",
     "typedi": "^0.10.0"
   },
   "devDependencies": {

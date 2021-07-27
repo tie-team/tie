@@ -24,7 +24,6 @@
     "class-transformer": "^0.4.0",
     "class-validator": "^0.13.1",
     "cookie": "^0.4.1",
-    "globby": "^11.0.3",
     "is-class": "^0.0.9",
     "is-promise": "^4.0.0",
     "koa-bodyparser": "^4.3.0",

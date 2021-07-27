@@ -27,7 +27,6 @@
     "@types/lodash.set": "^4.3.6",
     "chalk": "^4.1.1",
     "fs-jetpack": "^4.1.0",
-    "globby": "^11.0.3",
     "is-class": "^0.0.9",
     "lodash.set": "^4.3.2"
   },

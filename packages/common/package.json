@@ -17,7 +17,7 @@
     "koa": "^2.13.1",
     "lodash.get": "^4.4.2",
     "reflect-metadata": "^0.1.13",
-    "tslib": "^2.2.0",
+    "globby": "^11.0.3",
     "typedi": "^0.10.0"
   },
   "devDependencies": {

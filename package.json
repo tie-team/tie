@@ -32,8 +32,8 @@
     "@commitlint/cli": "^12.1.1",
     "@commitlint/config-conventional": "^12.1.1",
     "lerna": "^4.0.0",
-    "tslib": "^2.2.0",
+    "tslib": "^2.3.0",
     "tsnl": "1.4.1",
-    "typescript": "^4.2.4"
+    "typescript": "^4.3.5"
   }
 }
